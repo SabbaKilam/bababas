@@ -19,7 +19,95 @@ body{
 main{
 	box-sizing: border-box;
 	height: 99vh;
+	min-height: 80%;
 	width: 99vw;
 	max-width: 600px;
 	border: 1px solid black;
+}
+
+#chatWindow {
+	box-sizing: border-box;	
+	top: 0;
+	height: 75%;
+	min-height: 50%;
+	width: 100%;
+	border: 1px solid green;	
+}
+.chatAssembly{
+	display: inline-block;
+	float: left;
+	height: 25px;
+}
+
+#chatInputAssembly{
+	position: relative;
+	height: 15%;
+	min-height: 25%;
+	margin: 0 auto;
+
+	
+}
+
+#chatPrompt{
+	width: 15%;
+	margin-right: 10px;
+}
+#chatInput{
+	width: 75%;
+}html {
+	font-size: calc(0.5vh + 0.5vw + 10px);
+}
+
+html, body {
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-size: 1.25rem;
+	font-family: sans-serif;
+	display: grid;
+	place-content: center;
+}
+
+main{
+	box-sizing: border-box;
+	height: 99vh;
+	min-height: 80%;
+	width: 99vw;
+	max-width: 600px;
+	border: 1px solid black;
+}
+
+#chatWindow {
+	box-sizing: border-box;	
+	top: 0;
+	height: 75%;
+	min-height: 50%;
+	width: 100%;
+	border: 1px solid green;	
+}
+.chatAssembly{
+	display: inline-block;
+	float: left;
+	height: 25px;
+}
+
+#chatInputAssembly{
+	position: relative;
+	height: 15%;
+	min-height: 25%;
+	margin: 0 auto;
+
+	
+}
+
+#chatPrompt{
+	width: 15%;
+	margin-right: 10px;
+}
+#chatInput{
+	width: 75%;
 }
