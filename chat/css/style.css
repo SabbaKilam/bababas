@@ -15,44 +15,67 @@ body{
 	font-family: sans-serif;
 	display: grid;
 	place-content: center;
+	background-image: linear-gradient(-20deg,lightblue, white, lightblue);
 }
 
 main{
+	position: relative;
 	box-sizing: border-box;
-	height: 99vh;
+	height: 80vh;
 	min-height: 80%;
 	width: 99vw;
 	max-width: 600px;
-	border: 1px solid black;
-}
+	/*border: 1px solid black;*/
+	border-radius: 1rem;
+	box-shadow: 0 0 5rem gray;
+	background-color: #eee;
 
-.chatAssembly{
-	display: inline-block;
-	float: left;
-	height: 25px;
 }
 
 #chatWindow {
-	box-sizing: border-box;	
-	top: 0;
-	height: 75%;
-	min-height: 50%;
 	width: 100%;
-	border: 1px solid green;	
+	height: 64vh;
+
 }
 
-#chatInputAssembly{
-	position: relative;
-	height: 15%;
-	min-height: 25%;
-	margin: 0 auto;
+#chatInputAssembly {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%);
+
+	border-radius: 0.5rem;
+	display: grid;
+	place-content: center;
+	width: 99vw;
+	max-width: 595px;
+	height: 14vh;
+	box-shadow: 3px 3px 5px gray;
 }
 
-#chatPrompt{
-	width: 15%;
-	margin-right: 10px;
+#typePrompt {
+	height: 5vh;
+	font-size: 0.8rem;
+	display: grid;
+	place-content: center;	
 }
 
-#chatInput{
-	width: 75%;
+#chatTextArea {
+	display: block;
+	width: 99vw;
+	max-width: 500px;
+	padding-left: 2rem;
+	height: 8vh;
+	font-size: 1.5rem;
 }
+/*
+<main>
+	<div id="chatWindow"></div>	
+	
+	<div id="chatInputAssembly">
+		<div id="typePrompt" class="chatAssembly">Type &#x21e8;</div>
+		<textarea type="text" id="chatTextArea" class="chatAssembly"></textarea>
+	</div>
+	
+</main>
+*/
